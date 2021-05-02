@@ -8,13 +8,6 @@ const mainElement = document.createElement('div');
 mainElement.setAttribute('id', 'root');
 document.body.appendChild(mainElement);
 
-const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Routes />
-    </>
-  );
-};
+const App = () => <Routes />;
 
 render(<App />, mainElement);
