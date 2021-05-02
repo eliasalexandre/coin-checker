@@ -1,5 +1,5 @@
 {
-  "name": "electron-react-typescript",
+  "name": "coin-checker",
   "version": "1.0.0",
   "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
   "main": "./dist/main.js",
@@ -70,9 +70,9 @@
     "styled-components": "^5.1.1"
   },
   "build": {
-    "appId": "your.id",
+    "appId": "234rm34o56tff4s5rt354t",
     "mac": {
-      "category": "public.app-category.video"
+      "category": "public.app-category.crypto"
     },
     "directories": {
       "output": "packages"
