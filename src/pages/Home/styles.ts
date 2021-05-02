@@ -37,4 +37,52 @@ export const Container = styled.div`
       }
     }
   }
+
+  > main {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 27px 27px 0 0;
+
+    > div.header {
+      height: 5rem;
+      padding: 0 0.5rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+      > span {
+        font: 500 1.3rem 'Inter', sans-serif;
+      }
+
+      button {
+        cursor: pointer;
+        border: 0;
+        border-radius: 0.6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 10rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+  }
 `;
+
+export const Element = styled.li``;
