@@ -22,31 +22,111 @@ const Actives: React.FC = () => {
 
         <ul>
           <Element>
-            <div>
+            <div id="coin-h">
               😶
               <span>Bitcoin</span>
             </div>
-            <div>
+            <div id="coin-b">
               <strong>274,049.090</strong>
             </div>
           </Element>
 
           <Element>
-            <div>
+            <div id="coin-h">
               😶
               <span>Dogecoin</span>
             </div>
-            <div>
+            <div id="coin-b">
               <strong>274,049.090</strong>
             </div>
           </Element>
 
           <Element>
-            <div>
+            <div id="coin-h">
               😶
               <span>Etherium</span>
             </div>
-            <div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
+              <strong>274,049.090</strong>
+            </div>
+          </Element>
+
+          <Element>
+            <div id="coin-h">
+              😶
+              <span>Dogecoin</span>
+            </div>
+            <div id="coin-b">
               <strong>274,049.090</strong>
             </div>
           </Element>

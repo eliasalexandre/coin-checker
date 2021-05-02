@@ -35,4 +35,20 @@ export const GlobalStyle = createGlobalStyle`
   ul li {
     list-style: none;
   }
+
+  /* Track */
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    /* border-radius: 1rem; */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    /* border-radius: 1rem; */
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary);
+  }
 `;

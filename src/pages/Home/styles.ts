@@ -45,14 +45,14 @@ export const Container = styled.div`
     border-radius: 27px 27px 0 0;
 
     > div.header {
-      height: 5rem;
+      height: 4.5rem;
       padding: 0 0.5rem;
 
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
 
       > span {
         font: 500 1.3rem 'Inter', sans-serif;
@@ -81,8 +81,34 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       padding: 0.5rem;
+
+      max-height: 15rem;
+      overflow: hidden;
+      overflow-y: auto;
     }
   }
 `;
 
-export const Element = styled.li``;
+export const Element = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 0.4rem;
+  margin: 0.2rem 0;
+  padding: 0.5rem 0;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  > div#coin-h {
+    flex: 1;
+    border-right: 3px solid rgba(0, 0, 0, 1);
+  }
+  > div#coin-b {
+    margin: 0 0.8rem;
+  }
+`;
