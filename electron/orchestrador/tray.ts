@@ -1,5 +1,5 @@
-const { Tray } = require('electron');
-const { resolve } = require('path');
+import { Tray } from 'electron';
+import { resolve } from 'path';
 
 const iconPath = resolve(__dirname, '../', 'assets', 'coin.png');
 
@@ -10,4 +10,4 @@ function createTray() {
   return tray;
 }
 
-module.exports = createTray();
+export { createTray };

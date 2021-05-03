@@ -6,6 +6,10 @@ import installExtension, {
   REDUX_DEVTOOLS,
 } from 'electron-devtools-installer';
 
+// Master
+import { createTray } from './orchestrador/tray';
+import { ControlWindow } from './orchestrador/controlWindow';
+
 let mainWindow: Electron.BrowserWindow | null;
 
 function createWindow() {
@@ -35,6 +39,13 @@ function createWindow() {
     );
   }
 
+  const myTray = createTray();
+  const { toggle } = ControlWindow(mainWindow, myTray);
+
+  myTray.on('click', toggle);
+  mainWindow.on('ready-to-show', mainWindow.hide);
+  mainWindow.on('blur', mainWindow.hide);
+
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
@@ -53,4 +64,8 @@ app
         .catch((err) => console.log('An error occurred: ', err));
     }
   });
+
+if (process.platform === 'darwin') {
+  app.dock.hide();
+}
 app.allowRendererProcessReuse = true;
