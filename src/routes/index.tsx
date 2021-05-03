@@ -7,10 +7,13 @@ import { GlobalStyle } from '../styles/GlobalStyle';
 import Home from '../pages/Home';
 import Actives from '../pages/Home';
 import Navigator from '../components/Navigator';
+import Header from '../components/Header';
 
 const MyRoutes: React.FC = () => {
   return (
     <BrowserRouter>
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/actives" element={<Actives />} />

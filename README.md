@@ -14,13 +14,16 @@
 
 ## Overview
 
+> testado apenas no windows
+
 - Home
-  - [ ]  ver os preços das moedas
-  - [ ]  pesquisar por outras moedas
+
+  - [ ] ver os preços das moedas
+  - [ ] pesquisar por outras moedas
 
 - Main
-  - [ ]  Saldo total das moedas
-  - [ ]  quanto possui de cada moeda
+  - [ ] Saldo total das moedas
+  - [ ] quanto possui de cada moeda
 
 ---
 

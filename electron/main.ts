@@ -15,6 +15,8 @@ function createWindow() {
     backgroundColor: '#121212',
     resizable: false,
     fullscreenable: false,
+    frame: false,
+    transparent: true,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, 'preload.ts'),
