@@ -5,9 +5,12 @@ import { Container } from './styles';
 const Navigator: React.FC = () => {
   return (
     <Container>
-      <button id="home" type="button">
+      <button className="currentActive" id="home" type="button">
         Home navigator
       </button>
+
+      <div className="circle"></div>
+
       <button id="actives" type="button">
         Profile navigator
       </button>

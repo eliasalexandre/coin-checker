@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500&display=swap');
 
   * {
     margin: 0;
@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary: #121212;
     --secondary: #1B1F23;
     --tertiary: #191622;
+    --link: #6E86D6;
   }
 
   @media (min-width: 1080px) {
