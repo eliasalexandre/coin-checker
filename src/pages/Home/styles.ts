@@ -102,11 +102,15 @@ export const Element = styled.li`
   > div {
     display: flex;
     align-items: center;
+
+    > span {
+      font: 500 0.9rem 'Inter', sans-serif;
+    }
   }
 
   > div#coin-h {
     flex: 1;
-    border-right: 3px solid rgba(0, 0, 0, 1);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
   }
   > div#coin-b {
     margin: 0 0.8rem;
