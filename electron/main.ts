@@ -44,7 +44,6 @@ function createWindow() {
 
   myTray.on('click', toggle);
   mainWindow.on('ready-to-show', mainWindow.hide);
-  mainWindow.on('blur', mainWindow.hide);
 
   mainWindow.on('closed', () => {
     mainWindow = null;
@@ -65,7 +64,7 @@ app
     }
   });
 
-if (process.platform === 'darwin') {
-  app.dock.hide();
-}
+// if (process.platform === 'darwin') {
+//   app.dock.hide();
+// }
 app.allowRendererProcessReuse = true;
