@@ -31,7 +31,7 @@ export const Container = styled.div`
         font: 500 1.2rem 'Ibm plex sans', sans-serif;
         color: #dedede;
 
-        border: 0.5px solid #afd2ec;
+        border: 0.5px solid #121212;
         border-radius: 0.4rem;
         background: transparent;
       }

@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import configProfile from '../../config/profile.json';
 import { Container, Element } from './styles';
 
+interface ICryptocurrencies {
+  coin: string;
+  nickname: string;
+  price: number;
+  has: number;
+  updated_at: Date;
+}
+
 const Actives: React.FC = () => {
+  const [data, setData] = useState<ICryptocurrencies[]>(() => {
+    const market = configProfile.marketplace as ICryptocurrencies[];
+
+    return market;
+  });
+
   return (
     <Container>
       <nav>
@@ -21,115 +36,17 @@ const Actives: React.FC = () => {
         </div>
 
         <ul>
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Bitcoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Etherium</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
-
-          <Element>
-            <div id="coin-h">
-              😶
-              <span>Dogecoin</span>
-            </div>
-            <div id="coin-b">
-              <strong>274,049.090</strong>
-            </div>
-          </Element>
+          {data.map((crypto) => (
+            <Element key={crypto.coin}>
+              <div id="coin-h">
+                😶
+                <span>{crypto.coin}</span>
+              </div>
+              <div id="coin-b">
+                <strong>{crypto.price}</strong>
+              </div>
+            </Element>
+          ))}
         </ul>
       </main>
     </Container>

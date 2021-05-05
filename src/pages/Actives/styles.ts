@@ -9,10 +9,16 @@ export const Container = styled.div`
     flex-direction: column;
 
     padding: 0.5rem;
+    height: 5rem;
     background: var(--secondary);
 
-    h3 {
+    span {
+      font: 600 1rem 'Ibm plex sans', Arial, sans-serif;
+    }
+
+    h2 {
       font: 400 0.9rem 'Ibm plex sans', sans-serif;
+      margin: 2rem 0.5rem;
     }
 
     form {

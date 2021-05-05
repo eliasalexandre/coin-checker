@@ -5,21 +5,6 @@ interface IControlWindow {
 }
 
 function ControlWindow(win: BrowserWindow, tray: Tray): IControlWindow {
-  function toggle() {
-    if (win.isVisible()) {
-      win.hide();
-    } else {
-      show();
-    }
-  }
-
-  function show() {
-    const { x, y } = getPosition();
-    win.setPosition(x, y, false);
-    win.show();
-    win.focus();
-  }
-
   function getPosition() {
     const winBounds = win.getBounds();
     const trayBounds = tray.getBounds();
@@ -31,6 +16,21 @@ function ControlWindow(win: BrowserWindow, tray: Tray): IControlWindow {
     const y = Math.round(trayBounds.y - trayBounds.height - winBounds.height);
 
     return { x, y };
+  }
+
+  function show() {
+    const { x, y } = getPosition();
+    win.setPosition(x, y, false);
+    win.show();
+    win.focus();
+  }
+
+  function toggle() {
+    if (win.isVisible()) {
+      win.hide();
+    } else {
+      show();
+    }
   }
 
   return { toggle };

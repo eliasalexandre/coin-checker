@@ -1,0 +1,28 @@
+{
+  "username": "eliasallex",
+  "total": "1243,435.65",
+  "updated_at": "123434",
+  "marketplace": [
+    {
+      "coin": "Bitcoin",
+      "nickname": "BTC",
+      "price": "12345,4657.856",
+      "has": "123.34",
+      "updated_at": ""
+    },
+    {
+      "coin": "Doge coin",
+      "nickname": "DOGE",
+      "price": "12345,4657.856",
+      "has": "123.34",
+      "updated_at": ""
+    },
+    {
+      "coin": "Ripple",
+      "nickname": "XRP",
+      "price": "12345,4657.856",
+      "has": "123.34",
+      "updated_at": ""
+    }
+  ]
+}
