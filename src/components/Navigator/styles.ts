@@ -19,11 +19,12 @@ export const Container = styled.div`
     border-radius: 50%;
   }
 
-  > button {
+  > a {
     background: transparent;
     color: #dedede;
     font: 500 0.9rem 'Inter', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 
     border: 0;
     padding: 1rem;

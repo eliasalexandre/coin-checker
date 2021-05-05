@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { Container } from './styles';
 
@@ -15,20 +15,15 @@ const Navigator: React.FC = () => {
 
   return (
     <Container>
-      <button
-        className="currentActive"
-        id="home"
-        type="button"
-        onClick={handleNavigateX}
-      >
+      <Link className="currentActive" id="home" type="button" to="/">
         Home navigator
-      </button>
+      </Link>
 
       <div className="circle"></div>
 
-      <button id="actives" type="button" onClick={handleNavigateY}>
+      <Link id="actives" type="button" to="/actives">
         Profile navigator
-      </button>
+      </Link>
     </Container>
   );
 };

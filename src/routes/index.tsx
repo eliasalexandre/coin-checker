@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Header from '../components/Header';
+import Navigator from '../components/Navigator';
+import Actives from '../pages/Actives';
+import Home from '../pages/Home';
 import { GlobalStyle } from '../styles/GlobalStyle';
 
 // PAGES
-import Home from '../pages/Home';
-import Actives from '../pages/Home';
-import Navigator from '../components/Navigator';
-import Header from '../components/Header';
 
 const MyRoutes: React.FC = () => {
   return (
