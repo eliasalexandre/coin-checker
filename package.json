@@ -1,7 +1,7 @@
 {
   "name": "coin-checker",
   "version": "1.0.0",
-  "description": "An Electron boilerplate including TypeScript, React, Jest and ESLint.",
+  "description": "Uma aplicação Electron para verificar a cotação de cripto-moedas",
   "main": "./dist/main.js",
   "scripts": {
     "dev": "npm-run-all -p dev:react electron:serve",
@@ -18,8 +18,8 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Diego Fernandes <diego.schell.f@gmail.com>",
-  "license": "MIT",
+  "author": "Elias alexandre <elias.garcia.alexandr@gmail.com>",
+  "license": "GPL-2.0",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
