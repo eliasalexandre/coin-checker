@@ -6,13 +6,13 @@ import { Container, Element } from './styles';
 interface ICryptocurrencies {
   coin: string;
   nickname: string;
-  price: number;
-  has: number;
+  price: string;
+  has: string;
   updated_at: Date;
 }
 
 const Actives: React.FC = () => {
-  const [data, setData] = useState<ICryptocurrencies[]>(() => {
+  const [data] = useState<ICryptocurrencies[]>(() => {
     const market = configProfile.marketplace as ICryptocurrencies[];
 
     return market;
