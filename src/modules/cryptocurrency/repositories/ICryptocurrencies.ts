@@ -1,3 +1,5 @@
+import { Cryptocurrency } from '../entities/Cryptocurrency';
+
 interface IUpdateReturn {
   bitcoin: string;
   dogecoin: string;
@@ -5,6 +7,7 @@ interface IUpdateReturn {
 }
 
 interface ICryptocurrencies {
+  getMarketplace(): Cryptocurrency[];
   update(): Promise<IUpdateReturn>;
 }
 

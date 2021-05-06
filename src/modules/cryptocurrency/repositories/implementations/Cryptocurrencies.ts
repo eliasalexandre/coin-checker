@@ -32,6 +32,10 @@ class Cryptocurrencies implements ICryptocurrencies {
     ];
   }
 
+  getMarketplace(): Cryptocurrency[] {
+    return this.marketplace;
+  }
+
   async update(): Promise<IUpdateReturn> {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -76,8 +80,6 @@ class Cryptocurrencies implements ICryptocurrencies {
 
       return crypto;
     });
-
-    this.marketplace.push();
 
     return cryptoList;
   }
